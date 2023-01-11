@@ -6,12 +6,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
         <title>Cripto Escuela</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+
+            }
+        </style>    
 
     </head>
     <body>
+        <table style="width: 500px;">
+            <thead>
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Chau Mundo</td>
+                <td>Dscto</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19.90$</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>29.90$</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total 49.80$</td>
+            </tfoot>
+        <!--ul es lista no ordenada-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <!--ul es lista ordenada-->
+        <ol>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                <ol>
+                    <li style="list-style-type: lower-roman;">sub elemento</li>
+                    <li style="list-style-type: lower-roman ;">sub elemento</li>
+                    <li style="list-style-type: lower-roman ;">sub elemento</li>
+                </ol>
+            </li>
+        </ol>
+
+
+
+        <form action="/formulario" method="POST">
+            <label for="nombre">Nombre</label>
+            <input value="chanchito"   type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+            <br>
+            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+            <br>
+            <button type="button">Tipo boton</button>
+            <button type="reset">Tipo reset</button>
+            <button type="submit">Tipo submit</button>
+
+        </form>
         <h1>Hola Criptoemprendedores</h1>
         <script src="index.js"></script>
 
+        <a target="_blank" href="https://www.google.com.pe/">Ir a google</a>
+
+        <img src="img/criptomoneda.jpg" width="200"/>
+       
 
 
     </body>
